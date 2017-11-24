@@ -1,0 +1,15 @@
+PODS:
+  - Masonry (1.1.0)
+  - XHToast (1.4.0)
+
+DEPENDENCIES:
+  - Masonry
+  - XHToast (~> 1.4.0)
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  XHToast: 3b354766d56d9df8fef8e64387bbd25c90d71a86
+
+PODFILE CHECKSUM: 0000a05b6f7e2d7f46a2dc5a7690d6ab7c430cee
+
+COCOAPODS: 1.1.1
