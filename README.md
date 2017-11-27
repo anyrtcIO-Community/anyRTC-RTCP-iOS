@@ -39,9 +39,9 @@ Xcode 8以上</br>
 **iOS** armv7 、arm64。  支持bitcode
 ## ipv6
 苹果2016年6月新政策规定新上架app必须支持ipv6-only。该库已经适配
-## Android版anyRTC-Meeting
+## Android版anyRTC-RTCP
 [anyRTC-Meeting-Android](https://github.com/AnyRTC/anyRTC-RTCP-Android)
-## 网页版anyRTC-Meeting
+## 网页版anyRTC-RTCP
 [anyRTC-RTCP-Web](https://www.anyrtc.io/demo/rtcp)
 
 
