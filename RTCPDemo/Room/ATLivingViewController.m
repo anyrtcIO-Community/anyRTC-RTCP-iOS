@@ -60,7 +60,7 @@
 }
 
 #pragma mark - RTCPKitDelegate
-- (void)onPublishOK:(NSString *)strRtcpId{
+- (void)onPublishOK:(NSString *)strRtcpId withLiveInfo:(NSString*)strLiveInfo{
     //发布媒体成功回调
     self.rtcpIdLabel.text = strRtcpId;
     self.tipsLabel.text = @"发布媒体成功...";

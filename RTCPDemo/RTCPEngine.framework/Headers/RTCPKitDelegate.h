@@ -18,7 +18,7 @@
 
  @param strRtcpId 通道Id
  */
-- (void)onPublishOK:(NSString *)strRtcpId;
+- (void)onPublishOK:(NSString *)strRtcpId withLiveInfo:(NSString*)strLiveInfo;
 
 /**
  发布媒体失败回调
