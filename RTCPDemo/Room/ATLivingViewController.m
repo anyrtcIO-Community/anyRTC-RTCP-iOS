@@ -16,6 +16,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *tipsLabel;
 //切换摄像头
 @property (weak, nonatomic) IBOutlet UIButton *switchButton;
+
+@property (weak, nonatomic) IBOutlet UIView *qrCodeView;
+//二维码
+@property (weak, nonatomic) IBOutlet UIImageView *qrCodeImageView;
+
 //视频显示窗口
 @property (nonatomic, strong) UIView *localView;
 
@@ -33,6 +38,13 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     appDelegate.allowRotation = YES;
     [self.view insertSubview:self.localView atIndex:0];
+    self.qrCodeView.hidden = YES;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(hideQrView)];
+    [self.qrCodeView addGestureRecognizer:tap];
+    
+    self.qrCodeImageView.userInteractionEnabled = YES;
+    UILongPressGestureRecognizer *longTap = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(saveImage:)];
+    [self.qrCodeImageView addGestureRecognizer:longTap];
     
     [self itializationRTCPKit];
 }
@@ -59,9 +71,28 @@
     }
 }
 
+- (void)hideQrView{
+    self.qrCodeView.hidden = YES;
+}
+
+- (void)saveImage:(UILongPressGestureRecognizer *)longTap{
+    if (longTap.state == UIGestureRecognizerStateBegan) {
+        //保存到相册
+        UIImageWriteToSavedPhotosAlbum(self.qrCodeImageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), (__bridge void *)self);
+    }
+}
+
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
+{
+    if (!error) {
+        [XHToast showCenterWithText:@"添加图片成功"];
+    }
+}
+
 #pragma mark - RTCPKitDelegate
 - (void)onPublishOK:(NSString *)strRtcpId withLiveInfo:(NSString*)strLiveInfo{
     //发布媒体成功回调
+    self.rtcpId = strRtcpId;
     self.rtcpIdLabel.text = strRtcpId;
     self.tipsLabel.text = @"发布媒体成功...";
 }
@@ -156,6 +187,19 @@
             AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
             appDelegate.allowRotation = NO;
             [self dismissViewControllerAnimated:YES completion:nil];
+            [self.navigationController popToRootViewControllerAnimated:YES];
+        }
+            break;
+        case 103://二维码
+        {
+            if (self.rtcpId.length > 0) {
+                self.qrCodeView.hidden = NO;
+                UIImage *qrImage = [SGQRCodeGenerateManager generateWithLogoQRCodeData:self.rtcpId logoImageName:@"ios-template-1024" logoScaleToSuperView:0.2];
+                
+                self.qrCodeImageView.image = qrImage;
+            } else {
+                [XHToast showCenterWithText:@"rtcpId为空"];
+            }
         }
             break;
         default:

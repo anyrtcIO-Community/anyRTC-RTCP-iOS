@@ -18,9 +18,10 @@
 		633D6E2D1FBC327800CF19EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 633D6E2B1FBC327800CF19EC /* AppDelegate.m */; };
 		635820121F9F2A1600086BD4 /* UIView+WZXLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 635820111F9F2A1600086BD4 /* UIView+WZXLines.m */; };
 		6358201D1F9F42D300086BD4 /* ATLivingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6358201C1F9F42D300086BD4 /* ATLivingViewController.m */; };
-		63D0DB771FD1592C002614C5 /* RTCPEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D0DB761FD1592C002614C5 /* RTCPEngine.framework */; };
-		63D0DB781FD15933002614C5 /* RTCPEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D0DB761FD1592C002614C5 /* RTCPEngine.framework */; };
-		63D0DB791FD15933002614C5 /* RTCPEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63D0DB761FD1592C002614C5 /* RTCPEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		63689F221FD646510049615F /* ATQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63689F201FD646500049615F /* ATQRCodeViewController.m */; };
+		63D0DB6F1FD1583C002614C5 /* RTCPEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D0DB6E1FD1583C002614C5 /* RTCPEngine.framework */; };
+		63D0DB701FD15847002614C5 /* RTCPEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D0DB6E1FD1583C002614C5 /* RTCPEngine.framework */; };
+		63D0DB711FD15847002614C5 /* RTCPEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63D0DB6E1FD1583C002614C5 /* RTCPEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8244396010DEB79BCE94DA60 /* libPods-RTCPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F33E71FDCDF6761395E2747 /* libPods-RTCPDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				63D0DB791FD15933002614C5 /* RTCPEngine.framework in Embed Frameworks */,
+				63D0DB711FD15847002614C5 /* RTCPEngine.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,7 +84,9 @@
 		635820111F9F2A1600086BD4 /* UIView+WZXLines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WZXLines.m"; sourceTree = "<group>"; };
 		6358201B1F9F42D300086BD4 /* ATLivingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATLivingViewController.h; sourceTree = "<group>"; };
 		6358201C1F9F42D300086BD4 /* ATLivingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATLivingViewController.m; sourceTree = "<group>"; };
-		63D0DB761FD1592C002614C5 /* RTCPEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RTCPEngine.framework; sourceTree = "<group>"; };
+		63689F201FD646500049615F /* ATQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATQRCodeViewController.m; sourceTree = "<group>"; };
+		63689F211FD646500049615F /* ATQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATQRCodeViewController.h; sourceTree = "<group>"; };
+		63D0DB6E1FD1583C002614C5 /* RTCPEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RTCPEngine.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +95,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8244396010DEB79BCE94DA60 /* libPods-RTCPDemo.a in Frameworks */,
-				63D0DB771FD1592C002614C5 /* RTCPEngine.framework in Frameworks */,
-				63D0DB781FD15933002614C5 /* RTCPEngine.framework in Frameworks */,
+				63D0DB6F1FD1583C002614C5 /* RTCPEngine.framework in Frameworks */,
+				63D0DB701FD15847002614C5 /* RTCPEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +142,7 @@
 		6318CBCD1F999B260014A927 /* RTCPDemo */ = {
 			isa = PBXGroup;
 			children = (
-				63D0DB761FD1592C002614C5 /* RTCPEngine.framework */,
+				63D0DB6E1FD1583C002614C5 /* RTCPEngine.framework */,
 				6318CC031F999F2E0014A927 /* Helpers */,
 				6318CC051F999F5B0014A927 /* Main */,
 				6318CC041F999F570014A927 /* Room */,
@@ -196,6 +199,8 @@
 			children = (
 				6318CC0B1F99A9EB0014A927 /* ATMainViewController.h */,
 				6318CC0C1F99A9EB0014A927 /* ATMainViewController.m */,
+				63689F211FD646500049615F /* ATQRCodeViewController.h */,
+				63689F201FD646500049615F /* ATQRCodeViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -422,6 +427,7 @@
 				6358201D1F9F42D300086BD4 /* ATLivingViewController.m in Sources */,
 				633D6E271FBC325100CF19EC /* BaseNavigationViewController.m in Sources */,
 				633D6E2D1FBC327800CF19EC /* AppDelegate.m in Sources */,
+				63689F221FD646510049615F /* ATQRCodeViewController.m in Sources */,
 				6318CC0D1F99A9EB0014A927 /* ATMainViewController.m in Sources */,
 				635820121F9F2A1600086BD4 /* UIView+WZXLines.m in Sources */,
 			);

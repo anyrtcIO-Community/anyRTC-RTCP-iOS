@@ -14,6 +14,14 @@
 #import "AppDelegate.h"
 
 #import "ATLivingViewController.h"
+//扫描
+#import "ATQRCodeViewController.h"
+
+#import "SGQRCode.h"
+
+#import "SGQRCodeScanManager.h"
+
+#import "SGQRCodeScanningView.h"
 //画线
 #import "UIView+WZXLines.h"
 

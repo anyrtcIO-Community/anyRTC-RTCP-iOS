@@ -1,15 +1,18 @@
 PODS:
   - Masonry (1.1.0)
+  - SGQRCode (2.1.8)
   - XHToast (1.4.0)
 
 DEPENDENCIES:
   - Masonry
+  - SGQRCode
   - XHToast (~> 1.4.0)
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SGQRCode: 989df341fb231fc7bf7e82316de2fc8de2961e10
   XHToast: 3b354766d56d9df8fef8e64387bbd25c90d71a86
 
-PODFILE CHECKSUM: 0000a05b6f7e2d7f46a2dc5a7690d6ab7c430cee
+PODFILE CHECKSUM: 8196ff06c1ecc40b8ba40f912ab01d1d1ba16be9
 
 COCOAPODS: 1.1.1
