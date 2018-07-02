@@ -238,7 +238,7 @@
 				6318CBC91F999B260014A927 /* Resources */,
 				6358200F1F9F287800086BD4 /* Embed Frameworks */,
 				AA0F3D57C2778FC9D056B424 /* [CP] Embed Pods Frameworks */,
-				45E6935D4E18CC3A9BECE804 /* [CP] Copy Pods Resources */,
+				AA1444D60CB7A9FDEDB5D522 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,24 +362,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		45E6935D4E18CC3A9BECE804 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-resources.sh",
-				"${PODS_ROOT}/SGQRCode/SGQRCode/SGQRCode.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SGQRCode.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		AA0F3D57C2778FC9D056B424 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,6 +378,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA1444D60CB7A9FDEDB5D522 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-resources.sh",
+				"${PODS_ROOT}/SGQRCode/SGQRCode/SGQRCode.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SGQRCode.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BDA9B0A8FE433C7BFFE25C35 /* [CP] Check Pods Manifest.lock */ = {

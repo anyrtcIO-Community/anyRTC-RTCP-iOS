@@ -44,9 +44,9 @@ pod 'RTCPEngine', '~> 1.0.5'
  [更多详细方法使用，请查看API文档](https://www.anyrtc.io/resoure)
 
 ## 项目展示
-![RTCP](RTCP.gif)
+![RTCP](/image/RTCP.gif)
 ## 扫描二维码下载demo
-![RTCP](RTCP.png)
+![RTCP](/image/RTCP.png)
 
 
 ## 支持的系统平台
