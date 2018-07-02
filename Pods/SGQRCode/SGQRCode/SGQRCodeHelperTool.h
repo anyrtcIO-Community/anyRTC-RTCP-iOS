@@ -1,8 +1,8 @@
 //
 //  如遇到问题或有更好方案，请通过以下方式进行联系
-//      QQ：1357127436
+//      QQ群：429899752
 //      Email：kingsic@126.com
-//      GitHub：https://github.com/kingsic/SGQRCode.git
+//      GitHub：https://github.com/kingsic/SGQRCode
 //
 //  SGQRCodeHelperTool.h
 //  SGQRCodeExample

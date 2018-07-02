@@ -1,1 +1,0 @@
-../../../SGQRCode/SGQRCode/Category/UIImage+ImageSize.h

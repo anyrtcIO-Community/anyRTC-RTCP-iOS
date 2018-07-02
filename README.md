@@ -10,6 +10,23 @@ Xcode 8以上</br>
 ### 2、运行环境
 真机运行、iOS 8.0以上（建议最新）
 
+
+## 导入SDK
+
+### Cocoapods导入
+```
+pod 'RTCPEngine', '~> 1.0.5'
+```
+### 手动导入
+
+1. 下载Demo，或者前往[anyRTC官网](https://www.anyrtc.io/resoure)下载SDK</br>
+![list_directory](/image/list_directory.png)
+
+2. 在Xcode中选择“Add files to 'Your project name'...”，将RTCPEngine.framework添加到你的工程目录中</br>
+
+3.  打开General->Embedded Binaries中添加RTCPEngine.framework</br>
+
+
 ## 如何使用？
 
 ### 注册账号

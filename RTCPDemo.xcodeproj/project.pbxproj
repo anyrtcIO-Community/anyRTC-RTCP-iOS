@@ -19,9 +19,6 @@
 		635820121F9F2A1600086BD4 /* UIView+WZXLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 635820111F9F2A1600086BD4 /* UIView+WZXLines.m */; };
 		6358201D1F9F42D300086BD4 /* ATLivingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6358201C1F9F42D300086BD4 /* ATLivingViewController.m */; };
 		63689F221FD646510049615F /* ATQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63689F201FD646500049615F /* ATQRCodeViewController.m */; };
-		63D0DB6F1FD1583C002614C5 /* RTCPEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D0DB6E1FD1583C002614C5 /* RTCPEngine.framework */; };
-		63D0DB701FD15847002614C5 /* RTCPEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D0DB6E1FD1583C002614C5 /* RTCPEngine.framework */; };
-		63D0DB711FD15847002614C5 /* RTCPEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63D0DB6E1FD1583C002614C5 /* RTCPEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8244396010DEB79BCE94DA60 /* libPods-RTCPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F33E71FDCDF6761395E2747 /* libPods-RTCPDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +46,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				63D0DB711FD15847002614C5 /* RTCPEngine.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,7 +82,6 @@
 		6358201C1F9F42D300086BD4 /* ATLivingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATLivingViewController.m; sourceTree = "<group>"; };
 		63689F201FD646500049615F /* ATQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATQRCodeViewController.m; sourceTree = "<group>"; };
 		63689F211FD646500049615F /* ATQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATQRCodeViewController.h; sourceTree = "<group>"; };
-		63D0DB6E1FD1583C002614C5 /* RTCPEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RTCPEngine.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +90,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8244396010DEB79BCE94DA60 /* libPods-RTCPDemo.a in Frameworks */,
-				63D0DB6F1FD1583C002614C5 /* RTCPEngine.framework in Frameworks */,
-				63D0DB701FD15847002614C5 /* RTCPEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +135,6 @@
 		6318CBCD1F999B260014A927 /* RTCPDemo */ = {
 			isa = PBXGroup;
 			children = (
-				63D0DB6E1FD1583C002614C5 /* RTCPEngine.framework */,
 				6318CC031F999F2E0014A927 /* Helpers */,
 				6318CC051F999F5B0014A927 /* Main */,
 				6318CC041F999F570014A927 /* Room */,
@@ -244,9 +236,9 @@
 				6318CBC71F999B260014A927 /* Sources */,
 				6318CBC81F999B260014A927 /* Frameworks */,
 				6318CBC91F999B260014A927 /* Resources */,
-				3BEFAD9B7918B894E548BB2A /* [CP] Embed Pods Frameworks */,
-				162DCFA9737D81153CB0FCBF /* [CP] Copy Pods Resources */,
 				6358200F1F9F287800086BD4 /* Embed Frameworks */,
+				AA0F3D57C2778FC9D056B424 /* [CP] Embed Pods Frameworks */,
+				45E6935D4E18CC3A9BECE804 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -299,7 +291,7 @@
 		6318CBC31F999B260014A927 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = jh;
 				TargetAttributes = {
 					6318CBCA1F999B260014A927 = {
@@ -370,30 +362,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		162DCFA9737D81153CB0FCBF /* [CP] Copy Pods Resources */ = {
+		45E6935D4E18CC3A9BECE804 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-resources.sh",
+				"${PODS_ROOT}/SGQRCode/SGQRCode/SGQRCode.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SGQRCode.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3BEFAD9B7918B894E548BB2A /* [CP] Embed Pods Frameworks */ = {
+		AA0F3D57C2778FC9D056B424 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-frameworks.sh",
+				"${PODS_ROOT}/RTCPEngine/RTCPEngine/RTCPEngine.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RTCPEngine.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -406,13 +404,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RTCPDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -490,6 +491,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -497,6 +499,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -545,6 +548,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -552,6 +556,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

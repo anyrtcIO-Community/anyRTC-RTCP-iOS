@@ -52,12 +52,11 @@
 - (void)itializationRTCPKit{
     //配置信息
     RTCPOption *option = [RTCPOption defaultOption];
-    option.videoMode = RTCP_Videos_QHD;
-    option.orientation = RTCP_SCRN_Auto;
+    option.videoMode = AnyRTCVideoQuality_Medium1;
+    option.orientation = RTC_SCRN_Auto;
     
     //初始化会议工具类
     self.rtcpKit = [[RTCPKit alloc]initWithDelegate:self withOption:option];
-
     if (self.isPull) {
         //观看直播
         [self.rtcpKit subscribe:self.rtcpId];
@@ -66,6 +65,9 @@
     } else {
         //开启直播
         [self.rtcpKit publish:0 withAnyRtcId:[ATCommon randomString:6]];
+        
+        [self.rtcpKit setLocalVideoRenderModel:AnyRTCVideoRenderScaleAspectFill];
+        
         //设置本地视频窗口
         [self.rtcpKit setLocalVideoCapturer:self.localView];
     }
