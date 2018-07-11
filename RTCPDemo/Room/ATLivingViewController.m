@@ -65,9 +65,7 @@
     } else {
         //开启直播
         [self.rtcpKit publish:0 withAnyRtcId:[ATCommon randomString:6]];
-        
-        [self.rtcpKit setLocalVideoRenderModel:AnyRTCVideoRenderScaleAspectFill];
-        
+        [self.rtcpKit updateLocalVideoRenderModel:AnyRTCVideoRenderScaleAspectFill];
         //设置本地视频窗口
         [self.rtcpKit setLocalVideoCapturer:self.localView];
     }

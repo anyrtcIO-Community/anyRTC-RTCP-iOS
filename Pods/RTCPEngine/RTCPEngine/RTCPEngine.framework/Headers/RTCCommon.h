@@ -195,6 +195,13 @@ typedef enum {
     RTMPC_Nomal_Message_Type = 0,//普通文本消息
     RTMPC_Barrage_Message_Type = 1   //弹幕消息
 }RTMPCMessageType;
+
+// 相机类型
+typedef enum {
+    AnyRTCCameraTypeNomal = 0,
+    AnyRTCCameraTypeBeauty = 1
+}AnyRTCCameraType;
+
 //滤镜常量
 typedef enum : char {
     //美颜滤镜
@@ -215,5 +222,6 @@ typedef enum {
     AnyRTCVideoRenderScaleAspectFit
     
 }AnyRTCVideoRenderMode;
+
 
 #endif	// __RTC_COMMON_H__

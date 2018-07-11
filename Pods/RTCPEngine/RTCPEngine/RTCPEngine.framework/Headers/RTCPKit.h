@@ -39,7 +39,7 @@
  @param eVideoRenderMode 显示模式
  说明：默认：AnyRTCVideoRenderScaleAspectFill，等比例填充视图模式
  */
-- (void)setLocalVideoRenderModel:(AnyRTCVideoRenderMode)eVideoRenderMode;
+- (void)updateLocalVideoRenderModel:(AnyRTCVideoRenderMode)eVideoRenderMode;
 
 /**
  设置本地音频是否传输
@@ -113,13 +113,8 @@
  @param eVideoRenderMode 显示模式
  说明：默认：AnyRTCVideoRenderScaleAspectFill，等比例填充视图模式
  */
-- (void)setRTCVideoRenderModel:(AnyRTCVideoRenderMode)eVideoRenderMode;
+- (void)updateRTCVideoRenderModel:(AnyRTCVideoRenderMode)eVideoRenderMode;
 
-/**
- 更新视图坐标
- 说明:布局之后，如果更改视图的坐标位置，需要调用该方法，才能正常显示
- */
-- (void)updateVideoLayOut;
 /**
  关闭离开
  */
