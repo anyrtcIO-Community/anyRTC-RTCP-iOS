@@ -15,7 +15,7 @@ Xcode 8以上</br>
 
 ### Cocoapods导入
 ```
-pod 'RTCPEngine', '~> 1.0.5'
+pod 'RTCPEngine', '~> 1.0.8'
 ```
 ### 手动导入
 
