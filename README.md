@@ -1,5 +1,22 @@
 # anyRTC-RTCP-iOS
 
+## 更新日志
+
+2018年11月08日：</br>
+
+添加本地和远程的第一帧回调</br>
+
+```
+//本地视频第一帧
+-(void)onRTCFirstLocalVideoFrame:(UIView*)videoView videoSize:(CGSize)size;
+
+//远程视频第一帧
+-(void)onRTCFirstRemoteVideoFrame:(UIView*)videoView videoSize:(CGSize)size;
+
+//视频大小变化回调
+- (void)onRTCVideoViewChanged:(UIView*)videoView didChangeVideoSize:(CGSize)size;
+```
+
 ## 简介
 anyRTC-RTCP-iOS实时直播，基于RTCPEngine SDK，实现快速实时直播，相比RTMPC更加快捷。</br>
 

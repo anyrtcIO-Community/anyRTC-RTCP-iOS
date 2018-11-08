@@ -56,13 +56,31 @@
  */
 - (void)onRTCCloseVideoRender:(NSString*)strRtcpId;
 
+#pragma mark - 视频第一针的回调
 /**
- 视频窗口大小的回调
+ 本地视频第一针
+
+ @param videoView 本地视频
+ @param size 视频窗口大小
+ */
+-(void)onRTCFirstLocalVideoFrame:(UIView*)videoView videoSize:(CGSize)size;
+
+/**
+ 远程视频第一针
+ 
+ @param videoView 本地视频
+ @param size 视频窗口大小
+ */
+-(void)onRTCFirstRemoteVideoFrame:(UIView*)videoView videoSize:(CGSize)size;
+
+#pragma mark - 视频大小变化回调
+/**
+ 本地/远程窗口大小的回调
 
  @param videoView 视频窗口
  @param size 视频窗口大小
  */
-- (void)onRTCCViewChanged:(UIView*)videoView didChangeVideoSize:(CGSize)size;
+- (void)onRTCVideoViewChanged:(UIView*)videoView didChangeVideoSize:(CGSize)size;
 
 @end
 

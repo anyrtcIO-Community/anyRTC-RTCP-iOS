@@ -1,12 +1,12 @@
 PODS:
   - Masonry (1.1.0)
-  - RTCPEngine (1.0.8)
+  - RTCPEngine (1.0.9)
   - SGQRCode (2.2.0)
   - XHToast (1.4.0)
 
 DEPENDENCIES:
   - Masonry
-  - RTCPEngine (~> 1.0.8)
+  - RTCPEngine (~> 1.0.9)
   - SGQRCode
   - XHToast (~> 1.4.0)
 
@@ -19,10 +19,10 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  RTCPEngine: 8a304af65a70877b5089d51b59b350050c105167
+  RTCPEngine: 274c85c1918d2423e026f40b62d214eac2457b0f
   SGQRCode: 6cd7f03ea6b74d1267820d427b07d1451b387c79
   XHToast: 3b354766d56d9df8fef8e64387bbd25c90d71a86
 
-PODFILE CHECKSUM: 8e4fe435dd31dab515384774abb5706c01f83da7
+PODFILE CHECKSUM: 8e5a8f68e0f5b9ba36ebe775febab24ac656ac1a
 
 COCOAPODS: 1.5.0

@@ -131,7 +131,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)onRTCCViewChanged:(UIView*)videoView didChangeVideoSize:(CGSize)size{
+- (void)onRTCVideoViewChanged:(UIView*)videoView didChangeVideoSize:(CGSize)size{
     //视频窗口大小的回调
     if (self.isPull && size.height > 0) {
         //拉
@@ -139,8 +139,18 @@
         [self layOut];
     } else {
         //推
-        self.localView.frame = self.view.bounds;
+        [self.localView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(0, 0, 0, 0));
+        }];
     }
+}
+
+-(void)onRTCFirstLocalVideoFrame:(UIView*)videoView videoSize:(CGSize)size{
+    //本地视频第一针
+}
+
+-(void)onRTCFirstRemoteVideoFrame:(UIView*)videoView videoSize:(CGSize)size{
+    //远程视频第一针
 }
 
 - (void)layOut{

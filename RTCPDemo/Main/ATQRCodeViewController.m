@@ -62,19 +62,13 @@
     if (metadataObjects != nil && metadataObjects.count > 0) {
         AVMetadataMachineReadableCodeObject *obj = metadataObjects[0];
         NSString *resultStr = [obj stringValue];
+        ATLivingViewController *livingVc = [[self storyboard] instantiateViewControllerWithIdentifier:@"LivingView"];
+        livingVc.isPull = YES;
+        livingVc.rtcpId = resultStr;
+        [self.navigationController pushViewController:livingVc animated:YES];
         
-        if (resultStr.length == 28) {
-            ATLivingViewController *livingVc = [[self storyboard] instantiateViewControllerWithIdentifier:@"LivingView"];
-            livingVc.isPull = YES;
-            livingVc.rtcpId = resultStr;
-            [self.navigationController pushViewController:livingVc animated:YES];
-            
-            [scanManager stopRunning];
-            [scanManager videoPreviewLayerRemoveFromSuperlayer];
-        } else {//跳转官网
-            NSString *iTunesLink = @"https://www.anyrtc.io/";
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:iTunesLink]];
-        }
+        [scanManager stopRunning];
+        [scanManager videoPreviewLayerRemoveFromSuperlayer];
     } else {
         [XHToast showCenterWithText:@"暂未识别出扫描的二维码"];
     }
