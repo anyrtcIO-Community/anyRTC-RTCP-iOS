@@ -157,7 +157,7 @@
     if (SCREEN_WIDTH > SCREEN_HEIGHT) {
         //横屏
         self.localView.frame = CGRectMake(0, 0, SCREEN_HEIGHT * self.videoScale, SCREEN_HEIGHT);
-    } else {
+    } else if (self.videoScale != 0){
         //竖屏
         self.localView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH/self.videoScale);
     }
