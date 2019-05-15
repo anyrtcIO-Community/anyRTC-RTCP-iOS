@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  RTCPDemo
+//
+//  Created by 余生丶 on 2019/4/9.
+//  Copyright © 2019 anyRTC. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+
+#error - 请前往www.anyrtc.io申请开发者信息
+//MARK: - 配置开发者信息
+static NSString *developerID = @"XXXXXX";
+static NSString *token = @"XXXXXX";
+static NSString *key = @"XXXXXX";
+static NSString *appID = @"XXXXXX";
+
+//MARK: - ARRtmpSDK && lib
+#import <RTCPEngine/ARRtcpSDK.h>
+#import <Masonry.h>
+#import <SVProgressHUD.h>
+#import "SGQRCode.h"
+
+//MARK: - 宏
+#define ArFlow_Notification @"ArFlow_Notification"
+
+//日志
+#define ArMethodText(name) [[self mutableArrayValueForKey:@"logArr"] addObject:[NSString stringWithFormat:@"方法：%@",name]]
+#define ArCallbackLog [[self mutableArrayValueForKey:@"logArr"] addObject:[NSString stringWithFormat:@"回调：%s",__func__]]
+
+#endif /* PrefixHeader_pch */

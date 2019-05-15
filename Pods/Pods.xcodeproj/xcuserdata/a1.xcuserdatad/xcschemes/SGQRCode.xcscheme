@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1D6E6990F22AD4937655D4555F5C16EA"
+               BlueprintIdentifier = "A44BC4FD70EC32459A5B068AD73D727E"
                BuildableName = "libSGQRCode.a"
                BlueprintName = "SGQRCode"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D6E6990F22AD4937655D4555F5C16EA"
+            BlueprintIdentifier = "A44BC4FD70EC32459A5B068AD73D727E"
             BuildableName = "libSGQRCode.a"
             BlueprintName = "SGQRCode"
             ReferencedContainer = "container:Pods.xcodeproj">

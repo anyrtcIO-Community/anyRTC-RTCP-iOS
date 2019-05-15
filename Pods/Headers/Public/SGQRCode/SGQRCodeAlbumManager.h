@@ -1,1 +1,0 @@
-../../../SGQRCode/SGQRCode/SGQRCodeAlbumManager.h

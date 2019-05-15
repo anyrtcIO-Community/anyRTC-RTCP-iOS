@@ -2,8 +2,8 @@
 //  main.m
 //  RTCPDemo
 //
-//  Created by jh on 2017/10/20.
-//  Copyright © 2017年 jh. All rights reserved.
+//  Created by 余生丶 on 2019/4/9.
+//  Copyright © 2019 anyRTC. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

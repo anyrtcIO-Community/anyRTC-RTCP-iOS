@@ -1,28 +1,24 @@
 PODS:
   - Masonry (1.1.0)
-  - RTCPEngine (1.1.0)
-  - SGQRCode (2.2.0)
-  - XHToast (1.4.0)
+  - SGQRCode (3.0.1)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Masonry
-  - RTCPEngine (~> 1.1.0)
-  - SGQRCode
-  - XHToast (~> 1.4.0)
+  - SGQRCode (~> 3.0.1)
+  - SVProgressHUD (~> 2.2.5)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Masonry
-    - RTCPEngine
     - SGQRCode
-    - XHToast
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  RTCPEngine: 47480343829671ade83cbf2eb7fd04817473665e
-  SGQRCode: 6cd7f03ea6b74d1267820d427b07d1451b387c79
-  XHToast: 3b354766d56d9df8fef8e64387bbd25c90d71a86
+  SGQRCode: bf02d60e18d6660a9d75ff1c8b9b467f064f054e
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 9a427b226f29a8116d7f9fe177ea76dba608e10f
+PODFILE CHECKSUM: 332f18468025cf2afa841dcf77ccdb845dc5ef44
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.1

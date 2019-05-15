@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  RTCPDemo
 //
-//  Created by jh on 2017/10/20.
-//  Copyright © 2017年 jh. All rights reserved.
+//  Created by 余生丶 on 2019/4/9.
+//  Copyright © 2019 anyRTC. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -17,15 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-#warning - 前往https://www.anyrtc.io/获取相关配置信息
     //配置开发者信息
-    [AnyRTCRtcpEngine initEngineWithAnyRTCInfo:developerID andAppId:appID andKey:key andToke:token];
-    //配置私有云，默认无需配置
-    //[AnyRTCRtcpEngine configServerForPriCloud:@"XXX" andPort:nil];
-    [NSThread sleepForTimeInterval:0.5];
+    [ARRtcpEngine initEngine:appID token:token];
     return YES;
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -53,11 +48,5 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window  NS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED {
-    if (self.allowRotation) {
-        return UIInterfaceOrientationMaskAll;
-    }
-    return UIInterfaceOrientationMaskPortrait;
-}
 
 @end

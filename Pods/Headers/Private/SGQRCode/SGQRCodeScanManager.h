@@ -1,1 +1,0 @@
-../../../SGQRCode/SGQRCode/SGQRCodeScanManager.h

@@ -3,49 +3,50 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6318CBD61F999B260014A927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6318CBD41F999B260014A927 /* Main.storyboard */; };
-		6318CBD81F999B260014A927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6318CBD71F999B260014A927 /* Assets.xcassets */; };
-		6318CBDE1F999B260014A927 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6318CBDD1F999B260014A927 /* main.m */; };
-		6318CBE81F999B260014A927 /* RTCPDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6318CBE71F999B260014A927 /* RTCPDemoTests.m */; };
-		6318CBF31F999B260014A927 /* RTCPDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6318CBF21F999B260014A927 /* RTCPDemoUITests.m */; };
-		6318CC0D1F99A9EB0014A927 /* ATMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6318CC0C1F99A9EB0014A927 /* ATMainViewController.m */; };
-		6318CC131F99E1530014A927 /* ATCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6318CC111F99E0FE0014A927 /* ATCommon.m */; };
-		633D6E271FBC325100CF19EC /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633D6E261FBC325100CF19EC /* BaseNavigationViewController.m */; };
-		633D6E2D1FBC327800CF19EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 633D6E2B1FBC327800CF19EC /* AppDelegate.m */; };
-		635820121F9F2A1600086BD4 /* UIView+WZXLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 635820111F9F2A1600086BD4 /* UIView+WZXLines.m */; };
-		6358201D1F9F42D300086BD4 /* ATLivingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6358201C1F9F42D300086BD4 /* ATLivingViewController.m */; };
-		63689F221FD646510049615F /* ATQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63689F201FD646500049615F /* ATQRCodeViewController.m */; };
-		8244396010DEB79BCE94DA60 /* libPods-RTCPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F33E71FDCDF6761395E2747 /* libPods-RTCPDemo.a */; };
+		09A09A2E831E7A7D9BFE0935 /* libPods-RTCPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEDB431E5747832BA253870 /* libPods-RTCPDemo.a */; };
+		630F1E35225C4612007CF259 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F1E34225C4612007CF259 /* AppDelegate.m */; };
+		630F1E3B225C4612007CF259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630F1E39225C4612007CF259 /* Main.storyboard */; };
+		630F1E3D225C4613007CF259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630F1E3C225C4613007CF259 /* Assets.xcassets */; };
+		630F1E43225C4613007CF259 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F1E42225C4613007CF259 /* main.m */; };
+		630F1E4D225C4613007CF259 /* RTCPDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F1E4C225C4613007CF259 /* RTCPDemoTests.m */; };
+		630F1E58225C4613007CF259 /* RTCPDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F1E57225C4613007CF259 /* RTCPDemoUITests.m */; };
+		630F1E71225C7C48007CF259 /* ArRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F1E70225C7C48007CF259 /* ArRoomViewController.m */; };
+		637C7F6E2289723B001D7361 /* ArMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C7F6D2289723B001D7361 /* ArMainViewController.m */; };
+		63C172F6225D8779001E72E7 /* ArQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C172F5225D8779001E72E7 /* ArQRCodeViewController.m */; };
+		63C172F8225DCAF5001E72E7 /* RTCPEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C172F7225DCAF5001E72E7 /* RTCPEngine.framework */; };
+		63C172FA225DCAFC001E72E7 /* RTCPEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63C172F7225DCAF5001E72E7 /* RTCPEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		63E1AAF1228970FD00975C9F /* ArLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E1AAF0228970FD00975C9F /* ArLogView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6318CBE41F999B260014A927 /* PBXContainerItemProxy */ = {
+		630F1E49225C4613007CF259 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6318CBC31F999B260014A927 /* Project object */;
+			containerPortal = 630F1E28225C4612007CF259 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6318CBCA1F999B260014A927;
+			remoteGlobalIDString = 630F1E2F225C4612007CF259;
 			remoteInfo = RTCPDemo;
 		};
-		6318CBEF1F999B260014A927 /* PBXContainerItemProxy */ = {
+		630F1E54225C4613007CF259 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6318CBC31F999B260014A927 /* Project object */;
+			containerPortal = 630F1E28225C4612007CF259 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6318CBCA1F999B260014A927;
+			remoteGlobalIDString = 630F1E2F225C4612007CF259;
 			remoteInfo = RTCPDemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6358200F1F9F287800086BD4 /* Embed Frameworks */ = {
+		630F1E6E225C4E94007CF259 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				63C172FA225DCAFC001E72E7 /* RTCPEngine.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,54 +54,52 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		22459FBDD85FCA2C8FB4C976 /* Pods-RTCPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTCPDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		3F33E71FDCDF6761395E2747 /* libPods-RTCPDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RTCPDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A46CDC85D8C034EB8933750 /* Pods-RTCPDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTCPDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo.release.xcconfig"; sourceTree = "<group>"; };
-		6318CBCB1F999B260014A927 /* RTCPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTCPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6318CBD51F999B260014A927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6318CBD71F999B260014A927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6318CBDC1F999B260014A927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6318CBDD1F999B260014A927 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6318CBE31F999B260014A927 /* RTCPDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTCPDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6318CBE71F999B260014A927 /* RTCPDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCPDemoTests.m; sourceTree = "<group>"; };
-		6318CBE91F999B260014A927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6318CBEE1F999B260014A927 /* RTCPDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTCPDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6318CBF21F999B260014A927 /* RTCPDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCPDemoUITests.m; sourceTree = "<group>"; };
-		6318CBF41F999B260014A927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6318CC0A1F99A0140014A927 /* RTCPDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCPDemo.pch; sourceTree = "<group>"; };
-		6318CC0B1F99A9EB0014A927 /* ATMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATMainViewController.h; sourceTree = "<group>"; };
-		6318CC0C1F99A9EB0014A927 /* ATMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATMainViewController.m; sourceTree = "<group>"; };
-		6318CC111F99E0FE0014A927 /* ATCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATCommon.m; sourceTree = "<group>"; };
-		6318CC121F99E0FE0014A927 /* ATCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCommon.h; sourceTree = "<group>"; };
-		633D6E251FBC325100CF19EC /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
-		633D6E261FBC325100CF19EC /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
-		633D6E2B1FBC327800CF19EC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		633D6E2C1FBC327800CF19EC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		635820101F9F2A1600086BD4 /* UIView+WZXLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WZXLines.h"; sourceTree = "<group>"; };
-		635820111F9F2A1600086BD4 /* UIView+WZXLines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WZXLines.m"; sourceTree = "<group>"; };
-		6358201B1F9F42D300086BD4 /* ATLivingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATLivingViewController.h; sourceTree = "<group>"; };
-		6358201C1F9F42D300086BD4 /* ATLivingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATLivingViewController.m; sourceTree = "<group>"; };
-		63689F201FD646500049615F /* ATQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATQRCodeViewController.m; sourceTree = "<group>"; };
-		63689F211FD646500049615F /* ATQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATQRCodeViewController.h; sourceTree = "<group>"; };
+		1EEDB431E5747832BA253870 /* libPods-RTCPDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RTCPDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F76B066C0CB70E9DB41DB4 /* Pods-RTCPDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTCPDemo.release.xcconfig"; path = "Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo.release.xcconfig"; sourceTree = "<group>"; };
+		630F1E30225C4612007CF259 /* RTCPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTCPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		630F1E33225C4612007CF259 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		630F1E34225C4612007CF259 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		630F1E3A225C4612007CF259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		630F1E3C225C4613007CF259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		630F1E41225C4613007CF259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630F1E42225C4613007CF259 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		630F1E48225C4613007CF259 /* RTCPDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTCPDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		630F1E4C225C4613007CF259 /* RTCPDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCPDemoTests.m; sourceTree = "<group>"; };
+		630F1E4E225C4613007CF259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630F1E53225C4613007CF259 /* RTCPDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTCPDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		630F1E57225C4613007CF259 /* RTCPDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCPDemoUITests.m; sourceTree = "<group>"; };
+		630F1E59225C4613007CF259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630F1E69225C49DF007CF259 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		630F1E6F225C7C48007CF259 /* ArRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArRoomViewController.h; sourceTree = "<group>"; };
+		630F1E70225C7C48007CF259 /* ArRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArRoomViewController.m; sourceTree = "<group>"; };
+		637C7F6C2289723B001D7361 /* ArMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArMainViewController.h; sourceTree = "<group>"; };
+		637C7F6D2289723B001D7361 /* ArMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArMainViewController.m; sourceTree = "<group>"; };
+		63C172F4225D8779001E72E7 /* ArQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArQRCodeViewController.h; sourceTree = "<group>"; };
+		63C172F5225D8779001E72E7 /* ArQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArQRCodeViewController.m; sourceTree = "<group>"; };
+		63C172F7225DCAF5001E72E7 /* RTCPEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RTCPEngine.framework; sourceTree = "<group>"; };
+		63E1AAEF228970FD00975C9F /* ArLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArLogView.h; sourceTree = "<group>"; };
+		63E1AAF0228970FD00975C9F /* ArLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArLogView.m; sourceTree = "<group>"; };
+		746BACD1F89CCB38F11B96B3 /* Pods-RTCPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTCPDemo.debug.xcconfig"; path = "Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6318CBC81F999B260014A927 /* Frameworks */ = {
+		630F1E2D225C4612007CF259 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8244396010DEB79BCE94DA60 /* libPods-RTCPDemo.a in Frameworks */,
+				09A09A2E831E7A7D9BFE0935 /* libPods-RTCPDemo.a in Frameworks */,
+				63C172F8225DCAF5001E72E7 /* RTCPEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6318CBE01F999B260014A927 /* Frameworks */ = {
+		630F1E45225C4613007CF259 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6318CBEB1F999B260014A927 /* Frameworks */ = {
+		630F1E50225C4613007CF259 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -110,117 +109,114 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6318CBC21F999B260014A927 = {
+		630E6E28225D7ADA00A31212 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				6318CBCD1F999B260014A927 /* RTCPDemo */,
-				6318CBE61F999B260014A927 /* RTCPDemoTests */,
-				6318CBF11F999B260014A927 /* RTCPDemoUITests */,
-				6318CBCC1F999B260014A927 /* Products */,
-				9704034B718422A515021BD6 /* Pods */,
-				CBCAA53A797FB89B36CE2425 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		6318CBCC1F999B260014A927 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6318CBCB1F999B260014A927 /* RTCPDemo.app */,
-				6318CBE31F999B260014A927 /* RTCPDemoTests.xctest */,
-				6318CBEE1F999B260014A927 /* RTCPDemoUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6318CBCD1F999B260014A927 /* RTCPDemo */ = {
-			isa = PBXGroup;
-			children = (
-				6318CC031F999F2E0014A927 /* Helpers */,
-				6318CC051F999F5B0014A927 /* Main */,
-				6318CC041F999F570014A927 /* Room */,
-				6318CC061F999F880014A927 /* Base */,
-				6318CBD41F999B260014A927 /* Main.storyboard */,
-				6318CBD71F999B260014A927 /* Assets.xcassets */,
-				6318CC0A1F99A0140014A927 /* RTCPDemo.pch */,
-				6318CBDC1F999B260014A927 /* Info.plist */,
-				6318CBDD1F999B260014A927 /* main.m */,
-			);
-			path = RTCPDemo;
-			sourceTree = "<group>";
-		};
-		6318CBE61F999B260014A927 /* RTCPDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				6318CBE71F999B260014A927 /* RTCPDemoTests.m */,
-				6318CBE91F999B260014A927 /* Info.plist */,
-			);
-			path = RTCPDemoTests;
-			sourceTree = "<group>";
-		};
-		6318CBF11F999B260014A927 /* RTCPDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6318CBF21F999B260014A927 /* RTCPDemoUITests.m */,
-				6318CBF41F999B260014A927 /* Info.plist */,
-			);
-			path = RTCPDemoUITests;
-			sourceTree = "<group>";
-		};
-		6318CC031F999F2E0014A927 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				6318CC121F99E0FE0014A927 /* ATCommon.h */,
-				6318CC111F99E0FE0014A927 /* ATCommon.m */,
-				635820101F9F2A1600086BD4 /* UIView+WZXLines.h */,
-				635820111F9F2A1600086BD4 /* UIView+WZXLines.m */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		6318CC041F999F570014A927 /* Room */ = {
-			isa = PBXGroup;
-			children = (
-				6358201B1F9F42D300086BD4 /* ATLivingViewController.h */,
-				6358201C1F9F42D300086BD4 /* ATLivingViewController.m */,
-			);
-			path = Room;
-			sourceTree = "<group>";
-		};
-		6318CC051F999F5B0014A927 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				6318CC0B1F99A9EB0014A927 /* ATMainViewController.h */,
-				6318CC0C1F99A9EB0014A927 /* ATMainViewController.m */,
-				63689F211FD646500049615F /* ATQRCodeViewController.h */,
-				63689F201FD646500049615F /* ATQRCodeViewController.m */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		6318CC061F999F880014A927 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				633D6E2C1FBC327800CF19EC /* AppDelegate.h */,
-				633D6E2B1FBC327800CF19EC /* AppDelegate.m */,
-				633D6E251FBC325100CF19EC /* BaseNavigationViewController.h */,
-				633D6E261FBC325100CF19EC /* BaseNavigationViewController.m */,
+				630F1E33225C4612007CF259 /* AppDelegate.h */,
+				630F1E34225C4612007CF259 /* AppDelegate.m */,
+				637C7F6C2289723B001D7361 /* ArMainViewController.h */,
+				637C7F6D2289723B001D7361 /* ArMainViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
 		};
-		9704034B718422A515021BD6 /* Pods */ = {
+		630E6E29225D7ADD00A31212 /* Room */ = {
 			isa = PBXGroup;
 			children = (
-				22459FBDD85FCA2C8FB4C976 /* Pods-RTCPDemo.debug.xcconfig */,
-				5A46CDC85D8C034EB8933750 /* Pods-RTCPDemo.release.xcconfig */,
+				63F9C120228BBD140024675B /* Controller */,
+				63F9C11F228BBD100024675B /* View */,
 			);
-			name = Pods;
+			path = Room;
 			sourceTree = "<group>";
 		};
-		CBCAA53A797FB89B36CE2425 /* Frameworks */ = {
+		630F1E27225C4612007CF259 = {
 			isa = PBXGroup;
 			children = (
-				3F33E71FDCDF6761395E2747 /* libPods-RTCPDemo.a */,
+				630F1E32225C4612007CF259 /* RTCPDemo */,
+				630F1E4B225C4613007CF259 /* RTCPDemoTests */,
+				630F1E56225C4613007CF259 /* RTCPDemoUITests */,
+				630F1E31225C4612007CF259 /* Products */,
+				9373DE018463DD3F6B0E5228 /* Pods */,
+				A832E254F05E1F59AC709356 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		630F1E31225C4612007CF259 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				630F1E30225C4612007CF259 /* RTCPDemo.app */,
+				630F1E48225C4613007CF259 /* RTCPDemoTests.xctest */,
+				630F1E53225C4613007CF259 /* RTCPDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		630F1E32225C4612007CF259 /* RTCPDemo */ = {
+			isa = PBXGroup;
+			children = (
+				63C172F7225DCAF5001E72E7 /* RTCPEngine.framework */,
+				630E6E29225D7ADD00A31212 /* Room */,
+				630E6E28225D7ADA00A31212 /* Base */,
+				630F1E39225C4612007CF259 /* Main.storyboard */,
+				630F1E3C225C4613007CF259 /* Assets.xcassets */,
+				630F1E41225C4613007CF259 /* Info.plist */,
+				630F1E42225C4613007CF259 /* main.m */,
+				630F1E69225C49DF007CF259 /* PrefixHeader.pch */,
+			);
+			path = RTCPDemo;
+			sourceTree = "<group>";
+		};
+		630F1E4B225C4613007CF259 /* RTCPDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				630F1E4C225C4613007CF259 /* RTCPDemoTests.m */,
+				630F1E4E225C4613007CF259 /* Info.plist */,
+			);
+			path = RTCPDemoTests;
+			sourceTree = "<group>";
+		};
+		630F1E56225C4613007CF259 /* RTCPDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				630F1E57225C4613007CF259 /* RTCPDemoUITests.m */,
+				630F1E59225C4613007CF259 /* Info.plist */,
+			);
+			path = RTCPDemoUITests;
+			sourceTree = "<group>";
+		};
+		63F9C11F228BBD100024675B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63E1AAEF228970FD00975C9F /* ArLogView.h */,
+				63E1AAF0228970FD00975C9F /* ArLogView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63F9C120228BBD140024675B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				630F1E6F225C7C48007CF259 /* ArRoomViewController.h */,
+				630F1E70225C7C48007CF259 /* ArRoomViewController.m */,
+				63C172F4225D8779001E72E7 /* ArQRCodeViewController.h */,
+				63C172F5225D8779001E72E7 /* ArQRCodeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9373DE018463DD3F6B0E5228 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				746BACD1F89CCB38F11B96B3 /* Pods-RTCPDemo.debug.xcconfig */,
+				32F76B066C0CB70E9DB41DB4 /* Pods-RTCPDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A832E254F05E1F59AC709356 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EEDB431E5747832BA253870 /* libPods-RTCPDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,17 +224,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6318CBCA1F999B260014A927 /* RTCPDemo */ = {
+		630F1E2F225C4612007CF259 /* RTCPDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6318CBF71F999B260014A927 /* Build configuration list for PBXNativeTarget "RTCPDemo" */;
+			buildConfigurationList = 630F1E5C225C4613007CF259 /* Build configuration list for PBXNativeTarget "RTCPDemo" */;
 			buildPhases = (
-				BDA9B0A8FE433C7BFFE25C35 /* [CP] Check Pods Manifest.lock */,
-				6318CBC71F999B260014A927 /* Sources */,
-				6318CBC81F999B260014A927 /* Frameworks */,
-				6318CBC91F999B260014A927 /* Resources */,
-				6358200F1F9F287800086BD4 /* Embed Frameworks */,
-				AA0F3D57C2778FC9D056B424 /* [CP] Embed Pods Frameworks */,
-				AA1444D60CB7A9FDEDB5D522 /* [CP] Copy Pods Resources */,
+				2F424519143C0BD467797AF2 /* [CP] Check Pods Manifest.lock */,
+				630F1E2C225C4612007CF259 /* Sources */,
+				630F1E2D225C4612007CF259 /* Frameworks */,
+				630F1E2E225C4612007CF259 /* Resources */,
+				630F1E6E225C4E94007CF259 /* Embed Frameworks */,
+				2711BFEE9E98AD25D096A7D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,113 +241,110 @@
 			);
 			name = RTCPDemo;
 			productName = RTCPDemo;
-			productReference = 6318CBCB1F999B260014A927 /* RTCPDemo.app */;
+			productReference = 630F1E30225C4612007CF259 /* RTCPDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6318CBE21F999B260014A927 /* RTCPDemoTests */ = {
+		630F1E47225C4613007CF259 /* RTCPDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6318CBFA1F999B260014A927 /* Build configuration list for PBXNativeTarget "RTCPDemoTests" */;
+			buildConfigurationList = 630F1E5F225C4613007CF259 /* Build configuration list for PBXNativeTarget "RTCPDemoTests" */;
 			buildPhases = (
-				6318CBDF1F999B260014A927 /* Sources */,
-				6318CBE01F999B260014A927 /* Frameworks */,
-				6318CBE11F999B260014A927 /* Resources */,
+				630F1E44225C4613007CF259 /* Sources */,
+				630F1E45225C4613007CF259 /* Frameworks */,
+				630F1E46225C4613007CF259 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6318CBE51F999B260014A927 /* PBXTargetDependency */,
+				630F1E4A225C4613007CF259 /* PBXTargetDependency */,
 			);
 			name = RTCPDemoTests;
 			productName = RTCPDemoTests;
-			productReference = 6318CBE31F999B260014A927 /* RTCPDemoTests.xctest */;
+			productReference = 630F1E48225C4613007CF259 /* RTCPDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6318CBED1F999B260014A927 /* RTCPDemoUITests */ = {
+		630F1E52225C4613007CF259 /* RTCPDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6318CBFD1F999B260014A927 /* Build configuration list for PBXNativeTarget "RTCPDemoUITests" */;
+			buildConfigurationList = 630F1E62225C4613007CF259 /* Build configuration list for PBXNativeTarget "RTCPDemoUITests" */;
 			buildPhases = (
-				6318CBEA1F999B260014A927 /* Sources */,
-				6318CBEB1F999B260014A927 /* Frameworks */,
-				6318CBEC1F999B260014A927 /* Resources */,
+				630F1E4F225C4613007CF259 /* Sources */,
+				630F1E50225C4613007CF259 /* Frameworks */,
+				630F1E51225C4613007CF259 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6318CBF01F999B260014A927 /* PBXTargetDependency */,
+				630F1E55225C4613007CF259 /* PBXTargetDependency */,
 			);
 			name = RTCPDemoUITests;
 			productName = RTCPDemoUITests;
-			productReference = 6318CBEE1F999B260014A927 /* RTCPDemoUITests.xctest */;
+			productReference = 630F1E53225C4613007CF259 /* RTCPDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6318CBC31F999B260014A927 /* Project object */ = {
+		630F1E28225C4612007CF259 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = jh;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = anyRTC;
 				TargetAttributes = {
-					6318CBCA1F999B260014A927 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Manual;
+					630F1E2F225C4612007CF259 = {
+						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
 						};
 					};
-					6318CBE21F999B260014A927 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 6318CBCA1F999B260014A927;
+					630F1E47225C4613007CF259 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 630F1E2F225C4612007CF259;
 					};
-					6318CBED1F999B260014A927 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 6318CBCA1F999B260014A927;
+					630F1E52225C4613007CF259 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 630F1E2F225C4612007CF259;
 					};
 				};
 			};
-			buildConfigurationList = 6318CBC61F999B260014A927 /* Build configuration list for PBXProject "RTCPDemo" */;
-			compatibilityVersion = "Xcode 8.0";
+			buildConfigurationList = 630F1E2B225C4612007CF259 /* Build configuration list for PBXProject "RTCPDemo" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 6318CBC21F999B260014A927;
-			productRefGroup = 6318CBCC1F999B260014A927 /* Products */;
+			mainGroup = 630F1E27225C4612007CF259;
+			productRefGroup = 630F1E31225C4612007CF259 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6318CBCA1F999B260014A927 /* RTCPDemo */,
-				6318CBE21F999B260014A927 /* RTCPDemoTests */,
-				6318CBED1F999B260014A927 /* RTCPDemoUITests */,
+				630F1E2F225C4612007CF259 /* RTCPDemo */,
+				630F1E47225C4613007CF259 /* RTCPDemoTests */,
+				630F1E52225C4613007CF259 /* RTCPDemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6318CBC91F999B260014A927 /* Resources */ = {
+		630F1E2E225C4612007CF259 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6318CBD81F999B260014A927 /* Assets.xcassets in Resources */,
-				6318CBD61F999B260014A927 /* Main.storyboard in Resources */,
+				630F1E3D225C4613007CF259 /* Assets.xcassets in Resources */,
+				630F1E3B225C4612007CF259 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6318CBE11F999B260014A927 /* Resources */ = {
+		630F1E46225C4613007CF259 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6318CBEC1F999B260014A927 /* Resources */ = {
+		630F1E51225C4613007CF259 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -362,52 +354,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AA0F3D57C2778FC9D056B424 /* [CP] Embed Pods Frameworks */ = {
+		2711BFEE9E98AD25D096A7D8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-frameworks.sh",
-				"${PODS_ROOT}/RTCPEngine/RTCPEngine/RTCPEngine.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RTCPEngine.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AA1444D60CB7A9FDEDB5D522 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-resources.sh",
 				"${PODS_ROOT}/SGQRCode/SGQRCode/SGQRCode.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SGQRCode.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BDA9B0A8FE433C7BFFE25C35 /* [CP] Check Pods Manifest.lock */ = {
+		2F424519143C0BD467797AF2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RTCPDemo-checkManifestLockResult.txt",
 			);
@@ -419,57 +403,55 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6318CBC71F999B260014A927 /* Sources */ = {
+		630F1E2C225C4612007CF259 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6318CC131F99E1530014A927 /* ATCommon.m in Sources */,
-				6318CBDE1F999B260014A927 /* main.m in Sources */,
-				6358201D1F9F42D300086BD4 /* ATLivingViewController.m in Sources */,
-				633D6E271FBC325100CF19EC /* BaseNavigationViewController.m in Sources */,
-				633D6E2D1FBC327800CF19EC /* AppDelegate.m in Sources */,
-				63689F221FD646510049615F /* ATQRCodeViewController.m in Sources */,
-				6318CC0D1F99A9EB0014A927 /* ATMainViewController.m in Sources */,
-				635820121F9F2A1600086BD4 /* UIView+WZXLines.m in Sources */,
+				637C7F6E2289723B001D7361 /* ArMainViewController.m in Sources */,
+				630F1E71225C7C48007CF259 /* ArRoomViewController.m in Sources */,
+				63E1AAF1228970FD00975C9F /* ArLogView.m in Sources */,
+				630F1E43225C4613007CF259 /* main.m in Sources */,
+				630F1E35225C4612007CF259 /* AppDelegate.m in Sources */,
+				63C172F6225D8779001E72E7 /* ArQRCodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6318CBDF1F999B260014A927 /* Sources */ = {
+		630F1E44225C4613007CF259 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6318CBE81F999B260014A927 /* RTCPDemoTests.m in Sources */,
+				630F1E4D225C4613007CF259 /* RTCPDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6318CBEA1F999B260014A927 /* Sources */ = {
+		630F1E4F225C4613007CF259 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6318CBF31F999B260014A927 /* RTCPDemoUITests.m in Sources */,
+				630F1E58225C4613007CF259 /* RTCPDemoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6318CBE51F999B260014A927 /* PBXTargetDependency */ = {
+		630F1E4A225C4613007CF259 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6318CBCA1F999B260014A927 /* RTCPDemo */;
-			targetProxy = 6318CBE41F999B260014A927 /* PBXContainerItemProxy */;
+			target = 630F1E2F225C4612007CF259 /* RTCPDemo */;
+			targetProxy = 630F1E49225C4613007CF259 /* PBXContainerItemProxy */;
 		};
-		6318CBF01F999B260014A927 /* PBXTargetDependency */ = {
+		630F1E55225C4613007CF259 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6318CBCA1F999B260014A927 /* RTCPDemo */;
-			targetProxy = 6318CBEF1F999B260014A927 /* PBXContainerItemProxy */;
+			target = 630F1E2F225C4612007CF259 /* RTCPDemo */;
+			targetProxy = 630F1E54225C4613007CF259 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6318CBD41F999B260014A927 /* Main.storyboard */ = {
+		630F1E39225C4612007CF259 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6318CBD51F999B260014A927 /* Base */,
+				630F1E3A225C4612007CF259 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -477,7 +459,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6318CBF51F999B260014A927 /* Debug */ = {
+		630F1E5A225C4613007CF259 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -487,6 +469,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -527,14 +510,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		6318CBF61F999B260014A927 /* Release */ = {
+		630F1E5B225C4613007CF259 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -544,6 +528,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -578,119 +563,136 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		6318CBF81F999B260014A927 /* Debug */ = {
+		630F1E5D225C4613007CF259 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22459FBDD85FCA2C8FB4C976 /* Pods-RTCPDemo.debug.xcconfig */;
+			baseConfigurationReference = 746BACD1F89CCB38F11B96B3 /* Pods-RTCPDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 3YB54BC6QT;
-				ENABLE_BITCODE = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5543CP4MRT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RTCPDemo",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/RTCPDemo.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = RTCPDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.RTCPDemo";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ar.RTCPDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = DyncDistributionProfile;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		6318CBF91F999B260014A927 /* Release */ = {
+		630F1E5E225C4613007CF259 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A46CDC85D8C034EB8933750 /* Pods-RTCPDemo.release.xcconfig */;
+			baseConfigurationReference = 32F76B066C0CB70E9DB41DB4 /* Pods-RTCPDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 3YB54BC6QT;
-				ENABLE_BITCODE = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5543CP4MRT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RTCPDemo",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/RTCPDemo.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = RTCPDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.RTCPDemo";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ar.RTCPDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = DyncDistributionProfile;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
-		6318CBFB1F999B260014A927 /* Debug */ = {
+		630F1E60225C4613007CF259 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5543CP4MRT;
 				INFOPLIST_FILE = RTCPDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.RTCPDemoTests";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ar.RTCPDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTCPDemo.app/RTCPDemo";
 			};
 			name = Debug;
 		};
-		6318CBFC1F999B260014A927 /* Release */ = {
+		630F1E61225C4613007CF259 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5543CP4MRT;
 				INFOPLIST_FILE = RTCPDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.RTCPDemoTests";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ar.RTCPDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTCPDemo.app/RTCPDemo";
 			};
 			name = Release;
 		};
-		6318CBFE1F999B260014A927 /* Debug */ = {
+		630F1E63225C4613007CF259 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5543CP4MRT;
 				INFOPLIST_FILE = RTCPDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.RTCPDemoUITests";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ar.RTCPDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = RTCPDemo;
 			};
 			name = Debug;
 		};
-		6318CBFF1F999B260014A927 /* Release */ = {
+		630F1E64225C4613007CF259 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5543CP4MRT;
 				INFOPLIST_FILE = RTCPDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.RTCPDemoUITests";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ar.RTCPDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = RTCPDemo;
@@ -700,43 +702,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6318CBC61F999B260014A927 /* Build configuration list for PBXProject "RTCPDemo" */ = {
+		630F1E2B225C4612007CF259 /* Build configuration list for PBXProject "RTCPDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6318CBF51F999B260014A927 /* Debug */,
-				6318CBF61F999B260014A927 /* Release */,
+				630F1E5A225C4613007CF259 /* Debug */,
+				630F1E5B225C4613007CF259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6318CBF71F999B260014A927 /* Build configuration list for PBXNativeTarget "RTCPDemo" */ = {
+		630F1E5C225C4613007CF259 /* Build configuration list for PBXNativeTarget "RTCPDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6318CBF81F999B260014A927 /* Debug */,
-				6318CBF91F999B260014A927 /* Release */,
+				630F1E5D225C4613007CF259 /* Debug */,
+				630F1E5E225C4613007CF259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6318CBFA1F999B260014A927 /* Build configuration list for PBXNativeTarget "RTCPDemoTests" */ = {
+		630F1E5F225C4613007CF259 /* Build configuration list for PBXNativeTarget "RTCPDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6318CBFB1F999B260014A927 /* Debug */,
-				6318CBFC1F999B260014A927 /* Release */,
+				630F1E60225C4613007CF259 /* Debug */,
+				630F1E61225C4613007CF259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6318CBFD1F999B260014A927 /* Build configuration list for PBXNativeTarget "RTCPDemoUITests" */ = {
+		630F1E62225C4613007CF259 /* Build configuration list for PBXNativeTarget "RTCPDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6318CBFE1F999B260014A927 /* Debug */,
-				6318CBFF1F999B260014A927 /* Release */,
+				630F1E63225C4613007CF259 /* Debug */,
+				630F1E64225C4613007CF259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6318CBC31F999B260014A927 /* Project object */;
+	rootObject = 630F1E28225C4612007CF259 /* Project object */;
 }

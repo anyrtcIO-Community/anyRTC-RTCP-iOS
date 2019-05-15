@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F453AD0A06C75C72A46B09DC98C9B751"
+               BlueprintIdentifier = "3E6ECB68E9AEB1A7B4C729D34DEE50AB"
                BuildableName = "libPods-RTCPDemo.a"
                BlueprintName = "Pods-RTCPDemo"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F453AD0A06C75C72A46B09DC98C9B751"
+            BlueprintIdentifier = "3E6ECB68E9AEB1A7B4C729D34DEE50AB"
             BuildableName = "libPods-RTCPDemo.a"
             BlueprintName = "Pods-RTCPDemo"
             ReferencedContainer = "container:Pods.xcodeproj">
