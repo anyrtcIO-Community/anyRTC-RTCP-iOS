@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,8 +17,6 @@
 		630F1E71225C7C48007CF259 /* ArRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F1E70225C7C48007CF259 /* ArRoomViewController.m */; };
 		637C7F6E2289723B001D7361 /* ArMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C7F6D2289723B001D7361 /* ArMainViewController.m */; };
 		63C172F6225D8779001E72E7 /* ArQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C172F5225D8779001E72E7 /* ArQRCodeViewController.m */; };
-		63C172F8225DCAF5001E72E7 /* RTCPEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C172F7225DCAF5001E72E7 /* RTCPEngine.framework */; };
-		63C172FA225DCAFC001E72E7 /* RTCPEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63C172F7225DCAF5001E72E7 /* RTCPEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63E1AAF1228970FD00975C9F /* ArLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E1AAF0228970FD00975C9F /* ArLogView.m */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +44,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				63C172FA225DCAFC001E72E7 /* RTCPEngine.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,7 +73,6 @@
 		637C7F6D2289723B001D7361 /* ArMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArMainViewController.m; sourceTree = "<group>"; };
 		63C172F4225D8779001E72E7 /* ArQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArQRCodeViewController.h; sourceTree = "<group>"; };
 		63C172F5225D8779001E72E7 /* ArQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArQRCodeViewController.m; sourceTree = "<group>"; };
-		63C172F7225DCAF5001E72E7 /* RTCPEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RTCPEngine.framework; sourceTree = "<group>"; };
 		63E1AAEF228970FD00975C9F /* ArLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArLogView.h; sourceTree = "<group>"; };
 		63E1AAF0228970FD00975C9F /* ArLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArLogView.m; sourceTree = "<group>"; };
 		746BACD1F89CCB38F11B96B3 /* Pods-RTCPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTCPDemo.debug.xcconfig"; path = "Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,7 +84,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				09A09A2E831E7A7D9BFE0935 /* libPods-RTCPDemo.a in Frameworks */,
-				63C172F8225DCAF5001E72E7 /* RTCPEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +149,6 @@
 		630F1E32225C4612007CF259 /* RTCPDemo */ = {
 			isa = PBXGroup;
 			children = (
-				63C172F7225DCAF5001E72E7 /* RTCPEngine.framework */,
 				630E6E29225D7ADD00A31212 /* Room */,
 				630E6E28225D7ADA00A31212 /* Base */,
 				630F1E39225C4612007CF259 /* Main.storyboard */,
@@ -234,6 +228,7 @@
 				630F1E2E225C4612007CF259 /* Resources */,
 				630F1E6E225C4E94007CF259 /* Embed Frameworks */,
 				2711BFEE9E98AD25D096A7D8 /* [CP] Copy Pods Resources */,
+				CE3FB264C43B5AE05D22D43E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -360,18 +355,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-resources.sh",
-				"${PODS_ROOT}/SGQRCode/SGQRCode/SGQRCode.bundle",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SGQRCode.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -398,6 +386,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE3FB264C43B5AE05D22D43E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -139,9 +139,14 @@
         case 103:
             //添加辅流
         {
-            ArQRCodeViewController *qrCodeVc = [[self storyboard] instantiateViewControllerWithIdentifier:@"ArQrCodeID"];
-            qrCodeVc.isFlow = YES;
-            [self.navigationController pushViewController:qrCodeVc animated:YES];
+            if (self.flowId.length != 0) {
+                [SVProgressHUD showWithStatus:@"只可订阅一路屏幕共享流"];
+                [SVProgressHUD dismissWithDelay:1.5];
+            } else {
+                ArQRCodeViewController *qrCodeVc = [[self storyboard] instantiateViewControllerWithIdentifier:@"ArQrCodeID"];
+                qrCodeVc.isFlow = YES;
+                [self.navigationController pushViewController:qrCodeVc animated:YES];
+            }
         }
             break;
         case 104:
@@ -162,6 +167,7 @@
     //订阅辅流
     self.flowId = (NSString *)notifi.object;
     [self.rtcpKit subscribeByToken:nil pubId:self.flowId];
+    ArMethodText(@"subscribeByToken:");
 }
 
 - (void)hideQrView{
@@ -218,6 +224,7 @@
     } else {
         //辅流
         self.flowView = [[UIView alloc] init];
+        self.flowView.backgroundColor = [UIColor blackColor];
         [self.view insertSubview:self.flowView aboveSubview:self.videoButton];
         [self.flowView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self.view.mas_centerX);

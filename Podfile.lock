@@ -1,24 +1,32 @@
 PODS:
+  - Bugly (2.5.0)
   - Masonry (1.1.0)
+  - RTCPEngine (3.0.1)
   - SGQRCode (3.0.1)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - Bugly
   - Masonry
+  - RTCPEngine (~> 3.0.1)
   - SGQRCode (~> 3.0.1)
   - SVProgressHUD (~> 2.2.5)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Bugly
     - Masonry
+    - RTCPEngine
     - SGQRCode
     - SVProgressHUD
 
 SPEC CHECKSUMS:
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  RTCPEngine: 8a5da07628efff26ed1ee14d02555ceb3777b50f
   SGQRCode: bf02d60e18d6660a9d75ff1c8b9b467f064f054e
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 332f18468025cf2afa841dcf77ccdb845dc5ef44
+PODFILE CHECKSUM: 3c2d8a320a24c59dc4e0847519082cfcc0dd1c52
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.0

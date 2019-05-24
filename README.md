@@ -15,7 +15,7 @@ Xcode 8以上</br>
 
 ### Cocoapods导入
 ```
-pod 'RTCPEngine', '~> 3.0.0'
+pod 'RTCPEngine', '~> 3.0.1'
 ```
 ### 手动导入
 
@@ -63,6 +63,10 @@ pod 'RTCPEngine', '~> 3.0.0'
 [anyRTC-RTCP-Web](https://www.anyrtc.io/demo/rtcp)
 
 ## 更新日志
+
+* 2019年05月24日：</br>
+
+修复观看端不操作锁屏问题</br>
 
 * 2019年05月15日：</br>
 
