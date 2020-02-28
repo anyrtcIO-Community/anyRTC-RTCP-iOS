@@ -29,6 +29,8 @@ static NSString *appID = @"XXXXXX";
 //MARK: - 宏
 #define ArFlow_Notification @"ArFlow_Notification"
 
+#define Version  [(__bridge NSDictionary *)CFBundleGetInfoDictionary(CFBundleGetMainBundle())objectForKey:@"CFBundleShortVersionString"]
+
 //日志
 #define ArMethodText(name) [[self mutableArrayValueForKey:@"logArr"] addObject:[NSString stringWithFormat:@"方法：%@",name]]
 #define ArCallbackLog [[self mutableArrayValueForKey:@"logArr"] addObject:[NSString stringWithFormat:@"回调：%s",__func__]]

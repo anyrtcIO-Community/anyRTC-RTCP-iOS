@@ -10,6 +10,8 @@
 
 @interface ArMainViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *versionLabel;
+
 @end
 
 @implementation ArMainViewController
@@ -17,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.versionLabel.text = [NSString stringWithFormat:@"V %@\n 技术支持：hi@dync.cc",Version];
 }
 
 - (void)viewWillAppear:(BOOL)animated{

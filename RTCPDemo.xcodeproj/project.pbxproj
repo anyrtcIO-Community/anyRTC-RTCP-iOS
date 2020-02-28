@@ -15,6 +15,8 @@
 		630F1E4D225C4613007CF259 /* RTCPDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F1E4C225C4613007CF259 /* RTCPDemoTests.m */; };
 		630F1E58225C4613007CF259 /* RTCPDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F1E57225C4613007CF259 /* RTCPDemoUITests.m */; };
 		630F1E71225C7C48007CF259 /* ArRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F1E70225C7C48007CF259 /* ArRoomViewController.m */; };
+		63616F07237575080013F38D /* RTCPEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F05237575000013F38D /* RTCPEngine.framework */; };
+		63616F08237575080013F38D /* RTCPEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F05237575000013F38D /* RTCPEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		637C7F6E2289723B001D7361 /* ArMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C7F6D2289723B001D7361 /* ArMainViewController.m */; };
 		63C172F6225D8779001E72E7 /* ArQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C172F5225D8779001E72E7 /* ArQRCodeViewController.m */; };
 		63E1AAF1228970FD00975C9F /* ArLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E1AAF0228970FD00975C9F /* ArLogView.m */; };
@@ -44,6 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				63616F08237575080013F38D /* RTCPEngine.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +72,7 @@
 		630F1E69225C49DF007CF259 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		630F1E6F225C7C48007CF259 /* ArRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArRoomViewController.h; sourceTree = "<group>"; };
 		630F1E70225C7C48007CF259 /* ArRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArRoomViewController.m; sourceTree = "<group>"; };
+		63616F05237575000013F38D /* RTCPEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RTCPEngine.framework; sourceTree = "<group>"; };
 		637C7F6C2289723B001D7361 /* ArMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArMainViewController.h; sourceTree = "<group>"; };
 		637C7F6D2289723B001D7361 /* ArMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArMainViewController.m; sourceTree = "<group>"; };
 		63C172F4225D8779001E72E7 /* ArQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArQRCodeViewController.h; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09A09A2E831E7A7D9BFE0935 /* libPods-RTCPDemo.a in Frameworks */,
+				63616F07237575080013F38D /* RTCPEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +154,7 @@
 		630F1E32225C4612007CF259 /* RTCPDemo */ = {
 			isa = PBXGroup;
 			children = (
+				63616F05237575000013F38D /* RTCPEngine.framework */,
 				630E6E29225D7ADD00A31212 /* Room */,
 				630E6E28225D7ADA00A31212 /* Base */,
 				630F1E39225C4612007CF259 /* Main.storyboard */,
@@ -228,7 +234,6 @@
 				630F1E2E225C4612007CF259 /* Resources */,
 				630F1E6E225C4E94007CF259 /* Embed Frameworks */,
 				2711BFEE9E98AD25D096A7D8 /* [CP] Copy Pods Resources */,
-				CE3FB264C43B5AE05D22D43E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -386,23 +391,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE3FB264C43B5AE05D22D43E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RTCPDemo/Pods-RTCPDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -582,12 +570,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5543CP4MRT;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 3YB54BC6QT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RTCPDemo",
+					"$(PROJECT_DIR)/RTCPDemo/RTCPEngine-master/RTCPEngine",
+					"$(PROJECT_DIR)/RTCPDemo/Room",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = RTCPDemo/Info.plist;
@@ -596,9 +587,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 3.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ar.RTCPDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = dync_dis;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -609,12 +601,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5543CP4MRT;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 3YB54BC6QT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RTCPDemo",
+					"$(PROJECT_DIR)/RTCPDemo/RTCPEngine-master/RTCPEngine",
+					"$(PROJECT_DIR)/RTCPDemo/Room",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = RTCPDemo/Info.plist;
@@ -623,9 +618,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 3.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ar.RTCPDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = dync_dis;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

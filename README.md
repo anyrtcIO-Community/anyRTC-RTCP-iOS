@@ -15,11 +15,11 @@ Xcode 8以上</br>
 
 ### Cocoapods导入
 ```
-pod 'RTCPEngine', '~> 3.0.1'
+pod 'RTCPEngine', '~> 3.0.2'
 ```
 ### 手动导入
 
-1. 下载Demo，或者前往[anyRTC官网](https://www.anyrtc.io/resoure)下载SDK</br>
+1. 下载Demo，或者前往[anyRTC官网](https://www.anyrtc.io)下载SDK</br>
 ![list_directory](/image/list_directory.png)
 
 2. 在Xcode中选择“Add files to 'Your project name'...”，将RTCPEngine.framework添加到你的工程目录中</br>
@@ -41,7 +41,7 @@ pod 'RTCPEngine', '~> 3.0.1'
 2、另一部手机复制，点击观看直播，粘贴复制的内容到输入框，开始观看直播。</br>
 
 ### 资源中心
- [更多详细方法使用，请查看API文档](https://www.anyrtc.io/resoure)
+ [更多详细方法使用，请查看API文档](https://docs.anyrtc.io/v1/RTCP/)
 
 ## 扫描二维码下载demo
 ![RTCP](/image/kRHw.png)
@@ -63,6 +63,10 @@ pod 'RTCPEngine', '~> 3.0.1'
 [anyRTC-RTCP-Web](https://www.anyrtc.io/demo/rtcp)
 
 ## 更新日志
+
+* 2020年02月27日：</br>
+
+添加发布、取消发布监听</br>
 
 * 2019年05月24日：</br>
 

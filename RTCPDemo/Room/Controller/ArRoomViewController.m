@@ -69,7 +69,7 @@
         ArMethodText(@"updateRTCVideoRenderModel:");
     } else {
         //开启直播（发布）
-        [self.rtcpKit publishByToken:nil mediaType:0];
+        [self.rtcpKit publishByToken:nil roomId:[self randomAnyRTCString:6] mediaType:0 isLive:YES];
         [self.rtcpKit updateLocalVideoRenderModel:ARVideoRenderScaleAspectFill];
         [self.rtcpKit setLocalVideoCapturer:self.view option:option];
         
@@ -193,6 +193,8 @@
 
 - (void)onRTCPublishOK:(NSString *)pubId liveInfo:(NSString *)liveInfo {
     //发布媒体成功回调
+    UIPasteboard * pastboard = [UIPasteboard generalPasteboard];
+    pastboard.string = [NSString stringWithFormat:@"pubId:%@,liveInfo:%@",pubId,liveInfo];
     self.pubId = pubId;
     self.roomIdLabel.text = [NSString stringWithFormat:@"  房间号：%@  ",pubId];
     ArCallbackLog;
@@ -311,6 +313,19 @@
             }
         }
     }
+}
+
+- (NSString*)randomAnyRTCString:(int)len {
+    char* charSet = "0123456789";
+    char* temp = malloc(len + 1);
+    for (int i = 0; i < len; i++) {
+        int randomPoz = (int) floor(arc4random() % strlen(charSet));
+        temp[i] = charSet[randomPoz];
+    }
+    temp[len] = '\0';
+    NSMutableString* randomString = [[NSMutableString alloc] initWithUTF8String:temp];
+    free(temp);
+    return randomString;
 }
 
 - (void)dealloc {
